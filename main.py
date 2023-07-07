@@ -509,13 +509,16 @@ def sign_in():
     signIn_btn.click()
     time.sleep(3)
     email_field = browser.find_element_by_name('username')
+    btn_submit_with_email = browser.find_element_by_name('submit')
+    btn_submit_with_email.click()
+
     password_field = browser.find_element_by_name('password')
     # submit_btn = browser.find_element_by_xpath('//button[@type="submit"]')
-    submit_btn = browser.find_element_by_name('submit')
+    btn_submit_signIn = browser.find_element_by_name('submit')
 
     email_field.send_keys(args.username)
     password_field.send_keys(args.password)
-    submit_btn.click()
+    btn_submit_signIn.click()
 
     time.sleep(3)
     browser.get(args.url)
