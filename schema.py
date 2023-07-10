@@ -18,5 +18,6 @@ SCHEMA = [
     'rating_mgmt',
     'recommends',
     'approves_of_CEO',
-    'positive_outlook'
+    'positive_outlook',
+    'co_response'
 ]
